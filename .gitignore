@@ -1,0 +1,4 @@
+*.json
+.tool-versions
+.mypy_cache
+venv

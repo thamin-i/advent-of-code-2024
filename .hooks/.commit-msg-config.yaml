@@ -1,0 +1,6 @@
+---
+  repos:
+    - repo: https://github.com/commit-check/commit-check
+      rev: v0.8.5
+      hooks:
+        - id: check-message
