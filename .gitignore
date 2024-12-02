@@ -1,4 +1,8 @@
-*.json
-.tool-versions
+# Ignore folders
+__pycache__
 .mypy_cache
-venv
+.tool-versions
+.venv
+
+# Ignore files
+*.json

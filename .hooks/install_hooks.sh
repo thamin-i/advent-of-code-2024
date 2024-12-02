@@ -6,7 +6,7 @@ PATH_HOOKS="$(
   pwd -P
 )"
 PATH_ROOT="${PATH_HOOKS%/*}"
-PRE_COMMIT_BIN="${PATH_ROOT}/venv/bin/pre-commit"
+PRE_COMMIT_BIN="${PATH_ROOT}/.venv/bin/pre-commit"
 
 installFunction() {
   for CONFIGFILE in $(ls -a "${PATH_HOOKS}"); do
