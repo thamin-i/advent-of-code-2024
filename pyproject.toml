@@ -7,6 +7,7 @@ name = "advent_of_code_2024"
 version = "0.1.0"
 description = "Advent of code 2024."
 authors = ["Guillaume Gilloux <Guillaume.Gilloux@sealk.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
@@ -18,7 +19,7 @@ isort = "^5.13.2"
 mypy = "^1.13.0"
 pre_commit = "^4.0.1"
 pylint = "^3.3.2"
-pyproject-flake8 = "^7.0.0"
+flake8 = "^7.1.1"
 
 [[tool.poetry.source]]
 name = "PyPI"
@@ -29,9 +30,6 @@ max-line-length = 100
 
 [tool.black]
 line-length = 80
-
-[tool.flake8]
-max-line-length = 80
 
 [tool.isort]
 multi_line_output=3

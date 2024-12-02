@@ -38,7 +38,7 @@ black:
 	$(PYTHON_BIN) -m black $(SOURCE_DIR) --check
 
 flake:
-	$(PYTHON_BIN) -m flake8 $(SOURCE_DIR)
+	$(PYTHON_BIN) -m flake8 $(SOURCE_DIR) --config ./setup.cfg
 
 isort:
 	$(PYTHON_BIN) -m isort $(SOURCE_DIR) --check-only

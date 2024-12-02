@@ -3,7 +3,7 @@
 import typing as t
 from collections import Counter
 
-from advent_of_code_2024.common.read_fixtures import read_int_list_from_file
+from advent_of_code_2024.day_01.common import read_int_list_from_file
 
 
 def compute_similarity_score(list_1: t.List[int], list_2: t.List[int]) -> int:
