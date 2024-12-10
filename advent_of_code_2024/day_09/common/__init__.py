@@ -95,8 +95,8 @@ class FileSystem:
                 ):
                     self.disk_blocks = (
                         self.disk_blocks[0:i]
-                        + [self.__get_last_used_block()]  # noqa: W503
-                        + self.disk_blocks[i + 1 :]  # noqa: W503
+                        + [self.__get_last_used_block()]
+                        + self.disk_blocks[i + 1 :]
                     )
                     self.__free_last_used_block()
                     compacted_blocks = True
@@ -145,8 +145,8 @@ class FileSystem:
                     self.disk_blocks[j] = None
                 self.disk_blocks = (
                     self.disk_blocks[0:i]
-                    + [block_id] * block_size  # noqa: W503
-                    + self.disk_blocks[i + block_size :]  # noqa: W503
+                    + [block_id] * block_size
+                    + self.disk_blocks[i + block_size :]
                 )
                 return True
             i += current_size
