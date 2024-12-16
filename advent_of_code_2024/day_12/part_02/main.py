@@ -200,14 +200,9 @@ def main() -> None:
     """Main function."""
     garden_map: t.List[t.List[str]] = read_garden_map("input.txt", __file__)
     regions: t.List[t.Tuple[str, int, int]] = compute_regions(garden_map)
-    for region in regions:
-        print(f"Plant: {region[0]}, Area: {region[1]}, Perimeter: {region[2]}")
-    print()
-    price: int = compute_fences_price(regions)
-    print(f"Price: {price}")
+    fences_price: int = compute_fences_price(regions)
+    print(fences_price)
 
 
 if __name__ == "__main__":
     main()
-
-# 854887 is too low
